@@ -38,6 +38,10 @@ export default class Start extends React.Component {
               onChangeText={(name) => this.setState({ name })}
               value={name}
               placeholder="Your name"
+              // accessibility
+              accessible={true}
+              accessibilityLabel="Your Name"
+              accessibilityHint="Please enter your name."
             />
           </View>
           <Text style={styles.choose}>Choose Background Color:</Text>
